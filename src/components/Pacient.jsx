@@ -11,11 +11,11 @@ const Pacient = ({paciente,setPaciente,eliminarPaciente}) => {
       <p className='font-bold'>Sintomas:<span className='font-normal'> {sintomas}</span></p>
       <div className='flex justify-between mt-5'>
         <button
-        className='bg-indigo-600 px-10 py-2 text-white font-bold uppercase rounded-lg hover:bg-indigo-700'
+        className='bg-indigo-600 sm:px-10 sm:py-2 px-5 py-1 text-white font-bold uppercase rounded-lg hover:bg-indigo-700'
         onClick={()=> setPaciente(paciente)}
         >Editar</button>
         <button
-        className='bg-red-500 px-10 py-2 text-white font-bold uppercase rounded-lg hover:bg-red-700'
+        className='bg-red-500 sm:px-10 sm:py-2 px-5 py-1 text-white font-bold uppercase rounded-lg hover:bg-red-700'
         onClick={()=> eliminarPaciente(id)}
         >Eliminar</button>
       </div>
